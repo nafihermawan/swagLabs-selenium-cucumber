@@ -1,0 +1,453 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2023-08-10T04:13:58.333Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3082000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDef.Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Positive Scenario",
+        "description": "",
+        "id": "inventory-page;positive-scenario",
+        "after": [
+          {
+            "result": {
+              "duration": 149000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDef.Hooks.close()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1746000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user login",
+            "match": {
+              "location": "stepDef.InventoryStep.user_login()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 386000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user select item",
+            "match": {
+              "location": "stepDef.InventoryStep.user_select_item()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "junit.framework.ComparisonFailure: expected:\u003c[]\u003e but was:\u003c[Sauce Labs Backpack]\u003e\n\tat junit.framework.Assert.assertEquals(Assert.java:100)\n\tat junit.framework.Assert.assertEquals(Assert.java:107)\n\tat stepDef.InventoryStep.user_direct_to_item_page(InventoryStep.java:50)\n\tat ✽.user direct to item page(file:///Users/nafihermawan/eclipse-workspace/saucedemo-cucumber/src/test/resources/Features/Inventory.feature:8)\n",
+              "duration": 41000000,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "user direct to item page",
+            "match": {
+              "location": "stepDef.InventoryStep.user_direct_to_item_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@InventoryPage"
+          },
+          {
+            "name": "@tag1"
+          }
+        ]
+      }
+    ],
+    "name": "Inventory Page",
+    "description": "",
+    "id": "inventory-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/Inventory.feature",
+    "tags": [
+      {
+        "name": "@InventoryPage",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2023-08-10T04:14:03.827Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2994000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDef.Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Login dengan mengosongkan username dan password",
+        "description": "",
+        "id": "title-of-your-feature;login-dengan-mengosongkan-username-dan-password",
+        "after": [
+          {
+            "result": {
+              "duration": 82000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDef.Hooks.close()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 51000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I go to Login Page",
+            "match": {
+              "location": "stepDef.LoginStep.openBrowser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 68000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I set credential",
+            "match": {
+              "location": "stepDef.LoginStep.setCredential()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 36000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Failed login",
+            "match": {
+              "location": "stepDef.LoginStep.verify()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag"
+          },
+          {
+            "name": "@tag1"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-08-10T04:14:07.081Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2421000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDef.Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Positive login",
+        "description": "",
+        "id": "title-of-your-feature;positive-login",
+        "after": [
+          {
+            "result": {
+              "duration": 83000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDef.Hooks.close()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1389000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I input \"standard_user\" as username, \"secret_sauce\" as password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 8
+                },
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 37
+                }
+              ],
+              "location": "stepDef.LoginStep.setValidCredential(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 45000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Login Success",
+            "match": {
+              "location": "stepDef.LoginStep.loginSucces()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag"
+          },
+          {
+            "name": "@tag2"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-08-10T04:14:11.031Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2583000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDef.Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Login dengan mengosongkan username",
+        "description": "",
+        "id": "title-of-your-feature;login-dengan-mengosongkan-username",
+        "after": [
+          {
+            "result": {
+              "duration": 81000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDef.Hooks.close()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 174000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I empty username, and fill \"secret_sauce\" as password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 27
+                }
+              ],
+              "location": "stepDef.LoginStep.i_empty_username_and_fill_password(java.lang.String)"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag"
+          },
+          {
+            "name": "@tag3"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-08-10T04:14:13.872Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2525000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDef.Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "Login dengan mengosongkan password",
+        "description": "",
+        "id": "title-of-your-feature;login-dengan-mengosongkan-password",
+        "after": [
+          {
+            "result": {
+              "duration": 131000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDef.Hooks.close()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 176000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I input \"standard_user\" as username, and empty password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 8
+                }
+              ],
+              "location": "stepDef.LoginStep.i_input_username_and_empty_password(java.lang.String)"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag"
+          },
+          {
+            "name": "@tag4"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-08-10T04:14:16.708Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3210000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDef.Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "Login dengan mengisi password yang tidak terdaftar",
+        "description": "",
+        "id": "title-of-your-feature;login-dengan-mengisi-password-yang-tidak-terdaftar",
+        "after": [
+          {
+            "result": {
+              "duration": 79000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDef.Hooks.close()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 182000000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I input invalid \"standard_usr\" as username, invalid \"secret_saue\" as password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_usr\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"secret_saue\"",
+                  "offset": 52
+                }
+              ],
+              "location": "stepDef.LoginStep.i_input_invalid_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag"
+          },
+          {
+            "name": "@tag4"
+          }
+        ]
+      }
+    ],
+    "name": "Title of your feature",
+    "description": "  I want to use this template for my feature file",
+    "id": "title-of-your-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/Login.feature",
+    "tags": [
+      {
+        "name": "@tag",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
